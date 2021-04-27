@@ -1,3 +1,7 @@
+/* variables */
+/* /variables */
+/* mixin */
+/* /mixin */
 /* classi preliminari */
 * {
   margin: 0;
@@ -22,13 +26,11 @@ header {
   align-items: center;
   background-color: #2e3a46;
 }
-
 header img {
   position: absolute;
   left: 10px;
   height: calc(80px - 5px - 5px);
 }
-
 header #genre-select {
   padding: 5px;
   background-color: #2e3a46;
@@ -46,7 +48,6 @@ main #music-container {
   flex-wrap: wrap;
   list-style: none;
 }
-
 main #music-container li {
   margin: 10px;
   height: 310px;
@@ -57,24 +58,20 @@ main #music-container li {
   transform: scale(1);
   transition: transform 0.5s;
 }
-
-main #music-container li:not(.big):not(.details):hover {
+main #music-container li:hover {
   transform: scale(1.2);
   transition: transform 0.5s;
 }
-
 main #music-container img {
   width: calc(100% - 15px - 15px);
   margin: 15px 15px 0 15px;
   cursor: pointer;
 }
-
 main #music-container h3 {
   margin: 10px;
   color: white;
   text-transform: uppercase;
 }
-
 main #music-container h4 {
   margin: 10px;
   color: gray;

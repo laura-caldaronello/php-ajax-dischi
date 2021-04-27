@@ -1,0 +1,17 @@
+header {
+    position: relative;
+    height: $header-height;
+    @include flex-center;
+    background-color: map.get($colors,'color-2');
+    img {
+        position: absolute;
+        left: 10px;
+        height: calc($header-height - 5px - 5px);
+    }
+    #genre-select {
+        padding: 5px;
+        background-color: map.get($colors,'color-2');
+        color: map.get($colors,'color-3');
+        border-color: map.get($colors,'color-3');
+    }
+}

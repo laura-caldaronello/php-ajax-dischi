@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: $body-height;
+    width: 100vw;
+    background-color: map.get($colors,'color-1');
+}
