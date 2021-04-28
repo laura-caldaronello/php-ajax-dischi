@@ -6,7 +6,7 @@
 <main>
     <ul id="music-container">
     <?php
-        foreach ($database as $k => $album) {
+        foreach ($database as $album) {
     ?>
             <li>
                 <img src="
