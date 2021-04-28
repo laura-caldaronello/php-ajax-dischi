@@ -1,0 +1,39 @@
+main {
+    #music-container {
+        width: 90%;
+        height: calc(#{map-get($other,'body-height')} - #{map-get($other,'header-height')});
+        margin: 0 auto;
+        @include flex-center;
+        flex-wrap: wrap;
+        list-style: none;
+        li {
+            margin: map-get($other,'album-margin');
+            height: map-get($other,'album-height');
+            width: calc((#{map-get($other,'album-height')} - (#{map-get($other,'album-margin')} * (#{map-get($other,'albums-inRow')} * 2))) / #{map-get($other,'albums-inRow')});
+            min-width: 150px;
+            background-color: map-get($colors,'color-2');
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.5s;
+            &:hover {
+                transform: scale(1.2);
+                transition: transform 0.5s;            
+            }
+        }
+        img {
+            width: calc(100% - (#{map-get($other,'album-img-margin')} * 2));
+            margin: map-get($other,'album-img-margin') map-get($other,'album-img-margin') 0 map-get($other,'album-img-margin');
+            cursor: pointer;
+        }
+        h3 {
+            margin: 10px;
+            color: map-get($colors,'color-3');
+            text-transform: uppercase;
+        }
+        h4 {
+            margin: 10px;
+            color: map-get($colors,'color-4');
+        }
+    }
+
+}

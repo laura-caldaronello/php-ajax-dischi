@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-    <link rel="stylesheet" href="dist/app.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="its_sass/dist/app.css?v=<?php echo time(); ?>">
     <title>PHP Dischi</title>
 </head>
 <body>
@@ -16,6 +16,8 @@
     <div id="myapp">
         <header>
             <img :src=logoPath alt="logo">
+            <input type="text" name="artist-select" id="artist-select" placeholder="Filtra per artista" v-model="artist">
+            <button @click="callArtist">Filtra</button>
         </header>
         <main>
             <ul id="music-container">

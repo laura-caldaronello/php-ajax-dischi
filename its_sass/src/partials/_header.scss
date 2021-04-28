@@ -1,0 +1,28 @@
+header {
+    position: relative;
+    height: map-get($other,'header-height');
+    @include flex-center;
+    background-color: map-get($colors,'color-2');
+    img {
+        position: absolute;
+        left: 10px;
+        height: calc(#{map-get($other,'header-height')} - 5px - 5px);
+    }
+    #artist-select {
+        padding: 5px;
+        background-color: map-get($colors,'color-2');
+        color: map-get($colors,'color-3');
+        border: 1px solid map-get($colors,'color-3');
+        font-family: $font;
+    }
+    button {
+        padding: 5px;
+        margin-left: 20px;
+        font-family: $font;
+        font-weight: bold;
+        border: 1px solid map-get($colors,'color-3');
+        background-color: map-get($colors,'color-3');
+        color: map-get($colors,'color-2');
+        cursor: pointer;
+    }
+}

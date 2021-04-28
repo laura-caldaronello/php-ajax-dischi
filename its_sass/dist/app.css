@@ -1,7 +1,7 @@
 /* variables */
 /* /variables */
-/* mixin */
-/* /mixin */
+/* mixins */
+/* /mixins */
 /* classi preliminari */
 * {
   margin: 0;
@@ -31,11 +31,22 @@ header img {
   left: 10px;
   height: calc(80px - 5px - 5px);
 }
-header #genre-select {
+header #artist-select {
   padding: 5px;
   background-color: #2e3a46;
   color: white;
-  border-color: white;
+  border: 1px solid white;
+  font-family: "Roboto", sans-serif;
+}
+header button {
+  padding: 5px;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: white;
+  color: #2e3a46;
+  cursor: pointer;
 }
 
 main #music-container {
@@ -51,7 +62,7 @@ main #music-container {
 main #music-container li {
   margin: 10px;
   height: 310px;
-  width: calc((100% - (10px * 14)) / 7);
+  width: calc((310px - (10px * (7 * 2))) / 7);
   min-width: 150px;
   background-color: #2e3a46;
   text-align: center;
@@ -63,8 +74,8 @@ main #music-container li:hover {
   transition: transform 0.5s;
 }
 main #music-container img {
-  width: calc(100% - 15px - 15px);
-  margin: 15px 15px 0 15px;
+  width: calc(100% - (10px * 2));
+  margin: 10px 10px 0 10px;
   cursor: pointer;
 }
 main #music-container h3 {
@@ -74,7 +85,7 @@ main #music-container h3 {
 }
 main #music-container h4 {
   margin: 10px;
-  color: gray;
+  color: grey;
 }
 
 /* /altro */
