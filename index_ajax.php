@@ -14,10 +14,18 @@
 <body>
     
     <div id="myapp">
-        <?php
-            include __DIR__ . '/partials/template_ajax/header.php';
-            include __DIR__ . '/partials/template_ajax/main.php';
-        ?>
+        <header>
+            <img :src=logoPath alt="logo">
+        </header>
+        <main>
+            <ul id="music-container">
+                <li v-for="album in database">
+                    <img :src="album.poster" alt="album">
+                    <h3>{{album.title}}</h3>
+                    <h4>{{album.author}}<br>{{album.year}}</h4>
+                </li>
+            </ul>
+        </main>
     </div>
 
 <script src="js/main.js"></script>

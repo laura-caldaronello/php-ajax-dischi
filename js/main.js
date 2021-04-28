@@ -6,7 +6,7 @@ var app = new Vue({
     },
     mounted() {
         axios
-        .get('http://localhost/php-ajax-dischi/server.php')
+        .get('http://localhost/php-ajax-dischi/server.php?artist=Queen')
         .then(got => {
             this.database = got.data;
         });
